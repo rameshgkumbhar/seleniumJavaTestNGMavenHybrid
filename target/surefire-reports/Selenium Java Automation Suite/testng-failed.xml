@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Selenium Java Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="seleniumJava.qa.listeners.MyListeners"/>
+  </listeners>
+  <test thread-count="5" name="Sauce Demo Tests(failed)" verbose="0">
+    <classes>
+      <class name="seleniumJava.qa.tests.LoginTest">
+        <methods>
+          <include name="verifyLoginWithInvalidCredentials"/>
+          <include name="verifyLoginWithoutCredentials"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- seleniumJava.qa.tests.LoginTest -->
+    </classes>
+  </test> <!-- Sauce Demo Tests(failed) -->
+</suite> <!-- Failed suite [Selenium Java Automation Suite] -->

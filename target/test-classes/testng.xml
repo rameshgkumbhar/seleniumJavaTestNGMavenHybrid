@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Selenium Java Automation Suite">
+	<listeners >
+		<listener class-name="seleniumJava.qa.listeners.MyListeners"></listener>
+	</listeners>
+  <test name="Sauce Demo Tests">
+    <classes>
+      <class name="seleniumJava.qa.tests.LoginTest"/>
+      <class name="seleniumJava.qa.tests.InventoryTest"/>
+      <class name="seleniumJava.qa.tests.ProductDetailsTest"/>
+      <class name="seleniumJava.qa.tests.ShoppingCartTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
